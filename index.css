@@ -8,3 +8,75 @@
 body {
   background-color: #EEE;
   font-family: sans-serif; }
+  body #app {
+    max-width: 80%;
+    margin: 0 auto; }
+    body #app .faqs {
+      padding: 60px 25px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      cursor: pointer; }
+      body #app .faqs .faq {
+        width: 100%;
+        max-width: 768px;
+        margin: 15px auto;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+        body #app .faqs .faq .question {
+          position: relative;
+          color: #D9B166;
+          font-size: 20px;
+          -webkit-transition: all 0.4s ease-out;
+          -o-transition: all 0.4s ease-out;
+          transition: all 0.4s ease-out; }
+          body #app .faqs .faq .question::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 3px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: #D9B166;
+            -webkit-transition: all 0.4s linear;
+            -o-transition: all 0.4s linear;
+            transition: all 0.4s linear; }
+          body #app .faqs .faq .question::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            -webkit-transform: translateY(-50%) rotate(90deg);
+            -ms-transform: translateY(-50%) rotate(90deg);
+            transform: translateY(-50%) rotate(90deg);
+            width: 3px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: #D9B166;
+            -webkit-transition: all 0.4s linear;
+            -o-transition: all 0.4s linear;
+            transition: all 0.4s linear; }
+        body #app .faqs .faq .answer {
+          opacity: 0;
+          max-height: 0;
+          -webkit-transition: all .4s ease-out;
+          -o-transition: all .4s ease-out;
+          transition: all .4s ease-out;
+          color: #D9B166;
+          font-size: 18px; }
+        body #app .faqs .faq.open .question {
+          margin-bottom: 15px; }
+        body #app .faqs .faq.open .answer {
+          opacity: 1;
+          max-height: 1000px; }
