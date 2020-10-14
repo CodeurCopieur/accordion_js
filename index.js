@@ -38,10 +38,7 @@ displayList(faqs);
 const faq_element = document.querySelectorAll('.faq');
 
 function linkAction(e){
-  faq_element.forEach( n => n.classList.remove('open'));
-  
   this.classList.toggle('open');
-
 }
 
 faq_element.forEach( faq => faq.addEventListener('click', linkAction))

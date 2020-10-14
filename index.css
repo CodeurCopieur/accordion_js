@@ -41,7 +41,7 @@ body {
             content: '';
             position: absolute;
             top: 50%;
-            right: 0;
+            right: 10px;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -56,7 +56,7 @@ body {
             content: '';
             position: absolute;
             top: 50%;
-            right: 0;
+            right: 10px;
             -webkit-transform: translateY(-50%) rotate(90deg);
             -ms-transform: translateY(-50%) rotate(90deg);
             transform: translateY(-50%) rotate(90deg);
@@ -77,6 +77,14 @@ body {
           font-size: 18px; }
         body #app .faqs .faq.open .question {
           margin-bottom: 15px; }
+          body #app .faqs .faq.open .question::before {
+            -webkit-transform: translateY(-50%) rotate(45deg);
+            -ms-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg); }
+          body #app .faqs .faq.open .question::after {
+            -webkit-transform: translateY(-50%) rotate(-45deg);
+            -ms-transform: translateY(-50%) rotate(-45deg);
+            transform: translateY(-50%) rotate(-45deg); }
         body #app .faqs .faq.open .answer {
           opacity: 1;
           max-height: 1000px; }

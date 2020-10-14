@@ -40,7 +40,7 @@ body {
             content: '';
             position: absolute;
             top: 50%;
-            right: 0;
+            right: 10px;
             transform: translateY(-50%) ;
 
             width: 3px;
@@ -54,7 +54,7 @@ body {
             content: '';
             position: absolute;
             top: 50%;
-            right: 0;
+            right: 10px;
             transform: translateY(-50%) rotate(90deg);
 
             width: 3px;
@@ -77,6 +77,14 @@ body {
         &.open {
           .question {
             margin-bottom: 15px;
+
+            &::before {
+              transform: translateY(-50%) rotate(45deg);
+            }
+
+            &::after {
+              transform: translateY(-50%) rotate(-45deg);
+            }
           }
 
           .answer {
